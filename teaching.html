@@ -1,7 +1,146 @@
 <!-- =========================
 FILE: teaching.html
 ========================= -->
-<section class="container">
+<style>
+:root {
+  --bg-light: #ffffff;
+  --bg-gray: #f4f6f8;
+  --text-main: #222222;
+  --text-muted: #555555;
+  --accent: #2c5aa0;
+  --border: #dddddd;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-main);
+  background: var(--bg-light);
+  line-height: 1.6;
+}
+
+.navbar {
+  background: var(--bg-gray);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.hero {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: var(--bg-gray);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.profile-pic {
+  width: 180px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.designation {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+section {
+  margin-top: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 6px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.card {
+  background: var(--bg-gray);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications | Soumajit Pramanik</title>
+</head>
+<body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-title">Dr. Soumajit Pramanik</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching & Supervision</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
 <h2>Teaching and Students</h2>
 
 <h3>Courses Taught</h3>
@@ -19,12 +158,35 @@ FILE: teaching.html
 
 <h3>Research Supervision</h3>
 <ul>
-<li>PhD: Kartikeya Saraswat (Ongoing)</li>
-<li>PhD: Khileswar Rajpuriya (Ongoing, Joint)</li>
-<li>PhD: Pooja Sarawgi (Ongoing, Joint)</li>
-<li>PhD: Gowry Sailaja (Ongoing, Joint)</li>
-<li>PhD: Sivananda (Ongoing, Joint)</li>
-<li>M.Tech / B.Tech: Multiple ongoing and graduated students</li>
+<li>PhD Students
+<ul>
+<li>Kartikeya Saraswat (Ongoing)</li>
+<li>Khileswar Rajpuriya (Ongoing, Joint)</li>
+<li>Pooja Sarawgi (Ongoing, Joint)</li>
+<li>Gowry Sailaja (Ongoing, Joint)</li>
+<li>Sivananda (Ongoing, Joint)</li>
 </ul>
-</section>
+</li>
+<li>M.Tech / B.Tech (Hons.)
+<ul>
+<li>Byomkesh Panda (Ongoing)</li>
+<li>Sugandh Kumar (Ongoing)</li>
+<li>Rahul Kumar (Ongoing)</li>
+<li>Brishti De (Ongoing)</li>
+<li>Debarghya Dutta (Graduated)</li>
+<li>Parul Diwakar (Graduated)</li>
+<li>Pallavi Pandey (Graduated)</li>
+<li>Aritra Deb (Graduated)</li>
+<li>Atharva Inamdar (Graduated)</li>
+<li>Vijay Babasaheb Shinde (Graduated)</li>
+<li>Ujan Deb (Graduated)</li>
+<li>Saima Imtiyaz (Graduated)</li>
+<li>Ashutosh Sahu (Graduated)</li>
+<li>Thummala Milind Kesar (Graduated)</li>
+</ul>
+</li>
+</ul>
+</main>
+</body>
+</html>
 
