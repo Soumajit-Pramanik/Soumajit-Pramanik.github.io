@@ -116,6 +116,18 @@ ul {
     text-align: center;
   }
 }
+
+.blink-soft {
+  animation: blink-soft 1.2s infinite;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+@keyframes blink-soft {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
 </style>
 
 
@@ -166,7 +178,7 @@ ul {
 
 
 <section>
-<h2>News & Announcements</h2>
+<h2><span class="blink-soft">News & Announcements</span></h2>
 <ul>
 <li><b>2025:</b> Journal paper accepted in <i>Knowledge and Information Systems (KAIS)</i>.</li>
 <li><b>2025:</b> Journal paper accepted in <i>IEEE Transactions on Computational Biology and Bioinformatics (TCBB)</i>.</li>
